@@ -46,28 +46,28 @@ include("../shared/header.php");
                         <div class="form-group">
                                 <label class="control-label col-md-2">Tên sản phẩm </label>
                                 <div class="col-md-10">
-                                        <input type="text" class="form-control" name="TENSP" required>
+                                        <input type="text" class="form-control" name="TENSP" pattern="^[a-zA-Z0-9\s]+$" required>
                                 </div>
                         </div>
 
                         <div class="form-group">
                                 <label class="control-label col-md-2">Đơn giá </label>
                                 <div class="col-md-10">
-                                        <input type="text" class="form-control" name="DONGIA" required>
+                                        <input type="number" class="form-control" name="DONGIA" min = "1000" required>
                                 </div>
                         </div>
 
                         <div class="form-group">
                                 <label class="control-label col-md-2">Số lượng </label>
                                 <div class="col-md-10">
-                                        <input type="number" class="form-control" name="SOLUONG" required>
+                                        <input type="number" class="form-control" name="SOLUONG" min = "0" required>
                                 </div>
                         </div>
 
                         <div class="form-group">
                                 <label class="control-label col-md-2">Mô tả </label>
                                 <div class="col-md-10">
-                                        <input type="text" class="form-control" name="MOTA" required>
+                                        <input type="text" class="form-control" name="MOTA" minlength="1" maxlength="255" pattern="^[a-zA-Z0-9\s]+$" required>
                                 </div>
                         </div>
 

@@ -59,21 +59,21 @@ include '../Shared_Layout/header.php';
 
                         <div class="form-group">
                             <label for="SDT">Số điện thoại</label>
-                            <input type="text" class="form-control" name="SDT" id="SDT" value="<?php if (isset($_GET['SDT']))
-                            echo $_GET['SDT'] ?>">
+                            <input type="text" class="form-control" name="SDT" id="SDT" pattern="^\d{11}$" title="Số điện thoại phải có 11 chữ số và không chứa ký tự đặc biệt." required> value="<?php if (isset($_GET['SDT']))
+                            echo $_GET['SDT'] ?> 
                             <!-- Validation message here -->
                         </div>
 
                         <div class="form-group">
                             <label for="EMAIL">Địa chỉ email</label>
-                            <input type="email" class="form-control" name="EMAIL" id="EMAIL" value="<?php if (isset($_GET['EMAIL']))
-                            echo $_GET['EMAIL'] ?>">
+                            <input type="email" class="form-control" name="EMAIL" id="EMAIL" pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" value="<?php if (isset($_GET['EMAIL']))
+                            echo $_GET['EMAIL'] ?>"  required>
                             <!-- Validation message here -->
                         </div>
 
                         <div class="form-group">
                             <label for="CMND">CMND</label>
-                            <input type="text" class="form-control" name="CMND" id="CMND" value="<?php if (isset($_GET['CMND']))
+                            <input type="text" class="form-control" name="CMND" id="CMND" pattern="^\d{12}$" title="CCCD không được chứa chữ hoặc ký tự đặc biệt." value="<?php if (isset($_GET['CMND']))
                             echo $_GET['CMND'] ?>">
                             <!-- Validation message here -->
                         </div>

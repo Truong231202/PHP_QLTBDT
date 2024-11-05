@@ -19,7 +19,6 @@
                                         echo "<li>";
                                         echo "<a href='../LOAISANPHAM/DanhSachSanPham.php?id= {$rows['MALOAISP']}'>{$rows["TENLOAISP"]}</a>";
                                         echo "</li>";
-
                                     }
                                 }
                                 ?>
